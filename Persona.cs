@@ -8,25 +8,27 @@ class Persona
 
     public Persona(int dni, string ape, string nom, DateTime fecha, string mail)
     {
-DNI = dni;
-apellido = ape;
-nombre = nom;
-fechaNacimiento = fecha;
-email = mail;
+        DNI = dni;
+        apellido = ape;
+        nombre = nom;
+        fechaNacimiento = fecha;
+        email = mail;
     }
 
     public int obtenerEdad()
     {
-        
+
         int añoActual;
         int edad;
         DateTime actual = new DateTime();
-       añoActual = actual.Year;
-       edad = añoActual - fechaNacimiento.Year;
-       if(actual.Day < fechaNacimiento.Day){
-edad--;
-       }
-        
+        actual = DateTime.Today;
+        añoActual = actual.Year;
+        edad = añoActual - fechaNacimiento.Year;
+        if (actual.Month < fechaNacimiento.Month || actual.Month == fechaNacimiento.Month && actual.Day < fechaNacimiento.Day)
+        {
+            edad--;
+        }
+
         return edad;
     }
     public bool puedeVotar()
@@ -38,6 +40,21 @@ edad--;
         else
         {
             return false;
+        }
+    }
+
+    public void mostrarDatos(){
+        Console.WriteLine("DNI:"+DNI);
+        Console.WriteLine("Apellido: "+apellido);
+        Console.WriteLine("Nombre: "+nombre);
+        Console.WriteLine("Edad:"+obtenerEdad());
+        Console.WriteLine("Fecha de nacimiento: "+fechaNacimiento.ToShortDateString());
+        Console.WriteLine("Email: "+email);
+        if(puedeVotar()){
+            Console.WriteLine("Puede votar?: Si");
+        }
+        else{
+            Console.WriteLine("Puede votar?: No");
         }
     }
 }
