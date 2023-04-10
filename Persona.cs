@@ -6,27 +6,32 @@ class Persona
     public DateTime fechaNacimiento { get; private set; }
     public string email { get; set; }
 
-    public Persona(int DNI, string ape, string nom, DateTime fecha, string email)
+    public Persona(int dni, string ape, string nom, DateTime fecha, string mail)
     {
-
+DNI = dni;
+apellido = ape;
+nombre = nom;
+fechaNacimiento = fecha;
+email = mail;
     }
 
-    public int obtenerEdad(DateTime fecha)
+    public int obtenerEdad()
     {
+        
         int añoActual;
         int edad;
         DateTime actual = new DateTime();
        añoActual = actual.Year;
-       edad = añoActual - fecha.Year;
-       if(actual.Day < fecha.Day){
+       edad = añoActual - fechaNacimiento.Year;
+       if(actual.Day < fechaNacimiento.Day){
 edad--;
        }
         
         return edad;
     }
-    public bool puedeVotar(int edad)
+    public bool puedeVotar()
     {
-        if (edad >= 16)
+        if (obtenerEdad() >= 16)
         {
             return true;
         }
