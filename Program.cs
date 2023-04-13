@@ -5,7 +5,7 @@ while (op != 5)
     switch (op)
     {
         case 1:
-            listaGente.Add(cargarPersona());
+            listaGente.Add(cargarPersona(listaGente));
             break;
         case 2:
             obetenerEstadisticas(listaGente);
@@ -44,13 +44,33 @@ static DateTime ingresarFecha(string tex1, string tex2, string tex3)
     return fecha;
 }
 
-static Persona cargarPersona()
+static int verificarDNI(int DNI, List<Persona> lista)
+{
+    foreach (Persona person in lista)
+    {
+        if (person.DNI == DNI)
+        {
+            Console.WriteLine("El DNI ingresado no es tuyo, volve a ingresar");
+            DNI = ingresarInt("Ingrese su DNI:");
+            while (person.DNI == DNI)
+            {
+                Console.WriteLine("El DNI ingresado no es tuyo, volve a ingresar");
+                DNI = ingresarInt("Ingrese su DNI:");
+            }
+        }
+    }
+
+    return DNI;
+}
+
+static Persona cargarPersona(List<Persona> lista)
 {
 
     string mail, ape, nom;
     DateTime fecha;
     int DNI;
     DNI = ingresarInt("Ingrese su DNI:");
+    DNI = verificarDNI(DNI, lista);
     ape = ingresarString("Ingrese su apellido: ");
     nom = ingresarString("Ingrese su nombre: ");
     fecha = ingresarFecha("Ingrese su año de nacimineto:", "Ingrese su mes de nacimiento:", "Ingrese su dia de nacimiento: ");

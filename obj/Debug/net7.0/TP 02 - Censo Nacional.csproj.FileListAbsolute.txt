@@ -1,0 +1,15 @@
+D:\DESCARGAS\TP-02---Censo-Nacional\bin\Debug\net7.0\TP 02 - Censo Nacional.exe
+D:\DESCARGAS\TP-02---Censo-Nacional\bin\Debug\net7.0\TP 02 - Censo Nacional.deps.json
+D:\DESCARGAS\TP-02---Censo-Nacional\bin\Debug\net7.0\TP 02 - Censo Nacional.runtimeconfig.json
+D:\DESCARGAS\TP-02---Censo-Nacional\bin\Debug\net7.0\TP 02 - Censo Nacional.dll
+D:\DESCARGAS\TP-02---Censo-Nacional\bin\Debug\net7.0\TP 02 - Censo Nacional.pdb
+D:\DESCARGAS\TP-02---Censo-Nacional\obj\Debug\net7.0\TP 02 - Censo Nacional.csproj.AssemblyReference.cache
+D:\DESCARGAS\TP-02---Censo-Nacional\obj\Debug\net7.0\TP 02 - Censo Nacional.GeneratedMSBuildEditorConfig.editorconfig
+D:\DESCARGAS\TP-02---Censo-Nacional\obj\Debug\net7.0\TP 02 - Censo Nacional.AssemblyInfoInputs.cache
+D:\DESCARGAS\TP-02---Censo-Nacional\obj\Debug\net7.0\TP 02 - Censo Nacional.AssemblyInfo.cs
+D:\DESCARGAS\TP-02---Censo-Nacional\obj\Debug\net7.0\TP 02 - Censo Nacional.csproj.CoreCompileInputs.cache
+D:\DESCARGAS\TP-02---Censo-Nacional\obj\Debug\net7.0\TP 02 - Censo Nacional.dll
+D:\DESCARGAS\TP-02---Censo-Nacional\obj\Debug\net7.0\refint\TP 02 - Censo Nacional.dll
+D:\DESCARGAS\TP-02---Censo-Nacional\obj\Debug\net7.0\TP 02 - Censo Nacional.pdb
+D:\DESCARGAS\TP-02---Censo-Nacional\obj\Debug\net7.0\TP 02 - Censo Nacional.genruntimeconfig.cache
+D:\DESCARGAS\TP-02---Censo-Nacional\obj\Debug\net7.0\ref\TP 02 - Censo Nacional.dll
